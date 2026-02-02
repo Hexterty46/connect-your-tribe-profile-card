@@ -1,18 +1,23 @@
 // Importeer het npm package Express (uit de door npm aangemaakte node_modules map)
 // Deze package is geïnstalleerd via `npm install`, en staat als 'dependency' in package.json
+// Uit de express library word "express" geimporteerd 
 import express from 'express'
 
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
+// Uit de liguidjs library word Liquid geimporteerd
 import { Liquid } from 'liquidjs';
 
 
 // Vul hier jouw eigen ID in (zie de instructies in de leertaak)
+// Dit is een varible voor je eigen ID
 const personID = 252
 
 // Doe een fetch naar een URL op de WHOIS API, ga pas verder als de fetch gelukt is
+// Hier word een aanvraag gemaakt om de gegevens op te halen
 const personResponse = await fetch('https://fdnd.directus.app/items/person/' + personID)
 
 // Lees van de response van die fetch het JSON object in, waar we iets mee kunnen doen
+// Hier kan je de response van de fetch zien
 const personResponseJSON = await personResponse.json()
 
 // Controleer eventueel de data in je console
