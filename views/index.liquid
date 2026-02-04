@@ -1,35 +1,7 @@
 {% render 'partials/head.liquid' %}
-
-    <div class="profile-card" id="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <header class="profile-card-header">
-            <img
-              src="assets/Furkan.png"
-              alt="Profielfoto"
-              class="profile-card-img"
-            />
-            <h1>{{ person.name }}</h1>
-            <p>19 jaar</p>
-            <button class="profile-card-button" id="RotateButton">🔄</button>
-          </header>
-          <img
-            src="assets/1000000182.jpg"
-            alt="Mijn foto"
-            class="profile-card-img"
-            id="own-photo"
-          />
-        </div>
-        <div class="card-back">
-          <button class="profile-card-button" id="RotateBack">🔄</button>
-          <h2>Over mij</h2>
-          <p>
-            Mijn naam is Semih Demir, en ik ben 19 jaar oud. Ik hou ervan om te
-            reizen en nieuwe plekken te zien en ervaren.
-          </p>
-        </div>
-      </div>
-    </div>
-    <script src="scripts/script.js"></script>
+<article>
+  <section class="front">voor</section>
+  <section class="back">achter</section>
+</article>
 
 {% render 'partials/foot.liquid' %}
